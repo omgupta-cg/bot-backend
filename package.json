@@ -4,6 +4,7 @@
   "description": "Chat bot API.",
   "main": "app.js",
   "scripts": {
+    "build": "echo 'Build completed'",
     "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "mocha --exit",
