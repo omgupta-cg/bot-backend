@@ -21,6 +21,5 @@ const server = app.listen(webConfig.port, () => console.info(`API running on por
 server.keepAliveTimeout = 65000;
 server.headersTimeout = 66000;
 
-module.exports = {
-  app,
-};
+// Export for Vercel
+module.exports = app;
