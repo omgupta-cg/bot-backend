@@ -27,7 +27,7 @@ const sendMessageApi = async (user, message, type, caption, mime) => {
   //   console.log(JSON.stringify(data, null, 2));
   //   return;
   // }
-  const url = `${klusterConfig.apiUrl}/bots/${klusterConfig.botId}/messages`;
+  const url = `${klusterConfig.apiUrl}/web-bots/${klusterConfig.botId}/messages`;
   const headers = {
     'Content-Type': 'application/json',
     Authorization: `Bearer ${klusterConfig.apiToken}`,
