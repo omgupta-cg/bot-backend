@@ -22,6 +22,9 @@ const klusterWebhook = async (req, res, next) => {
     } else if (req.body.type === 'persistent_menu_response') {
       userMessage = (req.body.persistent_menu_response.id - 1).toString();
       messageType = req.body.type;
+    } else if (req.body.type === 'user_session') {
+    userMessage = req.body.user_session.payload;
+    messageType = req.body.type;
     }
     const response = await service.klusterWebhook(
       userMobile,
